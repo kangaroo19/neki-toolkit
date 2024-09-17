@@ -1,11 +1,11 @@
-import React from "react";
+import { CSSProperties, ReactNode } from "react";
 interface NekiButtonProps {
     onClick?: () => void;
     disabled?: boolean;
-    children?: React.ReactNode;
+    children?: ReactNode;
     type?: "button" | "submit" | "reset";
-    style?: React.CSSProperties;
+    style?: CSSProperties;
     className?: string;
 }
-declare const NekiButton: React.FC<NekiButtonProps>;
-export default NekiButton;
+export default function NekiButton({ onClick, disabled, children, type, style, className, }: NekiButtonProps): import("react/jsx-runtime").JSX.Element;
+export {};

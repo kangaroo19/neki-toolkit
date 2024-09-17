@@ -10,7 +10,9 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-export default function NekiButton(_a) {
-    var onClick = _a.onClick, disabled = _a.disabled, children = _a.children, _b = _a.type, type = _b === void 0 ? "button" : _b, style = _a.style, className = _a.className;
-    return (_jsx("button", __assign({ className: className, onClick: onClick, disabled: disabled, type: type, style: style }, { children: children })));
+// 컴포넌트 정의
+export default function NekiLabel(_a) {
+    var className = _a.className, children = _a.children, htmlFor = _a.htmlFor;
+    // 스타일을 적용하는 헬퍼 함수 (divideStyleIDString) 가정
+    return (_jsx("label", __assign({ className: className, htmlFor: htmlFor }, { children: children })));
 }

@@ -10,7 +10,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-export default function NekiButton(_a) {
-    var onClick = _a.onClick, disabled = _a.disabled, children = _a.children, _b = _a.type, type = _b === void 0 ? "button" : _b, style = _a.style, className = _a.className;
-    return (_jsx("button", __assign({ className: className, onClick: onClick, disabled: disabled, type: type, style: style }, { children: children })));
+export default function NekiInputField(_a) {
+    var onChange = _a.onChange, type = _a.type, style = _a.style, className = _a.className, registerFn = _a.registerFn, placeholder = _a.placeholder, defaultValue = _a.defaultValue, id = _a.id;
+    return (_jsx("input", __assign({ id: id, type: type, className: className, style: style, onChange: onChange }, registerFn, { placeholder: placeholder })));
 }

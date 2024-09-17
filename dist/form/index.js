@@ -10,7 +10,8 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-export default function NekiButton(_a) {
-    var onClick = _a.onClick, disabled = _a.disabled, children = _a.children, _b = _a.type, type = _b === void 0 ? "button" : _b, style = _a.style, className = _a.className;
-    return (_jsx("button", __assign({ className: className, onClick: onClick, disabled: disabled, type: type, style: style }, { children: children })));
+import { Form } from "react-hook-form";
+export default function NekiForm(_a) {
+    var children = _a.children, className = _a.className, onSubmit = _a.onSubmit, control = _a.control, onError = _a.onError, onSuccess = _a.onSuccess;
+    return (_jsx(Form, __assign({ action: "", onError: onError, onSuccess: onSuccess, className: className, onSubmit: onSubmit, control: control }, { children: children })));
 }
